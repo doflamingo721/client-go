@@ -20,6 +20,7 @@ import (
 
 	"github.com/google/go-cmp/cmp"
 	"github.com/stretchr/testify/assert"
+	"k8s.io/apimachinery/pkg/util/sets"
 )
 
 func TestThreadSafeStoreDeleteRemovesEmptySetsFromIndex(t *testing.T) {
